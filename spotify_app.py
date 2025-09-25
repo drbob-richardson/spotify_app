@@ -54,10 +54,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# --- Example usage ---
-st.write("🚀 This emoji should look bigger now")
-st.metric("Downloads", "1234", "📈")
-st.button("Click me 🚀")
+
 
 
 IMAGE_MAP = {
