@@ -1,0 +1,73 @@
+{
+  "base_dir": "/Users/robertrichardson/Documents/Spotify_App/artifacts/spotify_v3",
+  "tasks": {
+    "pop3": {
+      "path": "/Users/robertrichardson/Documents/Spotify_App/artifacts/spotify_v3/pop3",
+      "dataset_info": {
+        "task": "pop3",
+        "rows": {
+          "total": 114000,
+          "train": 68400,
+          "val": 22800,
+          "test": 22800
+        },
+        "numeric_features": [
+          "duration_ms",
+          "danceability",
+          "energy",
+          "loudness",
+          "speechiness",
+          "acousticness",
+          "instrumentalness",
+          "liveness",
+          "valence",
+          "tempo"
+        ],
+        "categorical_features": [
+          "explicit",
+          "key",
+          "mode",
+          "time_signature",
+          "track_genre"
+        ],
+        "class_names": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "families": {
+        "logreg": [
+          "logreg_high",
+          "logreg_low",
+          "logreg_medium"
+        ],
+        "tree": [
+          "tree_high",
+          "tree_low",
+          "tree_medium"
+        ],
+        "mlp": [
+          "mlp_high",
+          "mlp_low",
+          "mlp_medium"
+        ],
+        "rf": [
+          "rf_high",
+          "rf_low",
+          "rf_medium"
+        ],
+        "kmeans": [
+          "kmeans_high",
+          "kmeans_low",
+          "kmeans_medium"
+        ],
+        "xgb": [
+          "xgb_low",
+          "xgb_medium",
+          "xgb_high"
+        ]
+      }
+    }
+  }
+}
