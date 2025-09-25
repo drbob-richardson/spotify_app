@@ -1,0 +1,33 @@
+{
+  "task": "pop3",
+  "rows": {
+    "total": 114000,
+    "train": 68400,
+    "val": 22800,
+    "test": 22800
+  },
+  "numeric_features": [
+    "duration_ms",
+    "danceability",
+    "energy",
+    "loudness",
+    "speechiness",
+    "acousticness",
+    "instrumentalness",
+    "liveness",
+    "valence",
+    "tempo"
+  ],
+  "categorical_features": [
+    "explicit",
+    "key",
+    "mode",
+    "time_signature",
+    "track_genre"
+  ],
+  "class_names": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+}
