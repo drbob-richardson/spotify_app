@@ -1,0 +1,2 @@
+# Pin minimally; adjust if your environment needs specific versions
+streamlit
