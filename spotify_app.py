@@ -27,6 +27,39 @@ HERO_DIR   = ASSETS_DIR / "hero"
 
 CLASS_NAMES = ["Low", "Medium", "High"]
 
+import streamlit as st
+
+# --- CSS override for bigger icons/emojis ---
+st.markdown(
+    """
+    <style>
+    /* Enlarge emojis in markdown */
+    .stMarkdown p {
+        font-size: 1.5rem;
+    }
+
+    /* Enlarge icons inside metrics */
+    [data-testid="stMetricValue"] svg {
+        width: 2em !important;
+        height: 2em !important;
+    }
+
+    /* Enlarge icons in buttons */
+    .stButton button svg {
+        width: 1.5em !important;
+        height: 1.5em !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# --- Example usage ---
+st.write("🚀 This emoji should look bigger now")
+st.metric("Downloads", "1234", "📈")
+st.button("Click me 🚀")
+
+
 IMAGE_MAP = {
     "family": {
         "Logistic regression": str(FAMILY_DIR / "logreg.png"),
